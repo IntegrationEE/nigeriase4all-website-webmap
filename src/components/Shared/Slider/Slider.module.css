@@ -1,0 +1,148 @@
+.inactive {
+  color: var(--color-gray-semi);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.subContainer {
+  padding: 0 15px 0 0;
+}
+
+.break {
+  height: 40px;
+}
+
+.slider {
+  position: relative;
+  width: max(210px, calc(20vw - 70px)); 
+  height: 30px;
+}
+
+.sliderTrack,
+.sliderRange {
+  border-radius: 3px;
+  height: 5px;
+  position: absolute;
+}
+
+.sliderTrack {
+  background-color: var(--color-gray-light);
+  width: 100%;
+  z-index: 1;
+}
+
+.sliderRange {
+  z-index: 2;
+}
+
+.inactiveRange {
+  background-color: var(--color-gray-light);
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: max(210px, calc(20vw - 70px)); 
+  outline: none;
+}
+
+.thumbWrapper{
+  position: relative
+}
+
+.thumbZindex3 {
+  z-index: 3;
+}
+
+.thumbZindex4 {
+  z-index: 4;
+}
+
+.thumbZindex5 {
+  z-index: 5;
+}
+
+.sliderLeftValue,
+.sliderRightValue {
+  font-size: 12px;
+  margin-top: 20px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.sliderLeftValue {
+  left: 6px;
+}
+
+.sliderRightValue {
+  right: -4px;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: var(--color-gray-light);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px var(--color-gray-semi);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: var(--color-gray-light);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px var(--color-gray-semi);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+@media (max-width: 1650px) {
+  .container {
+    display: inline;
+  }
+  .slider {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;  
+  }
+  .slider {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1650px) {
+  .slider {
+    width: 180px;
+  }
+  .thumb {
+    width: 190px; 
+  }
+}

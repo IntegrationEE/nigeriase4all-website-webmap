@@ -1,0 +1,98 @@
+.overlay {
+    width: min(70vw, 600px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    padding: 20px;
+  }
+
+
+  .instruction{
+      display: inline,   
+  }
+
+  .grayout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-brand-gray);
+    opacity: 50%;
+    z-index: 9000;
+  }
+
+  .textAppear1{
+    -webkit-animation: appear1 10s ease-in;
+    -moz-animation: appear1 10s ease-in;
+    animation: appear1 10s ease-in;
+  }
+
+  .textAppear2{
+    -webkit-animation: appear2 10s ease-in;
+    -moz-animation: appear2 10s ease-in;
+    animation: appear2 10s ease-in;
+  }
+
+  .textAppear3{
+    -webkit-animation: appear3 10s ease-in;
+    -moz-animation: appear3 10s ease-in;
+    animation: appear3 10s ease-in;
+  }
+
+  .textAppear4{
+    -webkit-animation: appear4 10s ease-in;
+    -moz-animation: appear4 10s ease-in;
+    animation: appear4 10s ease-in;
+  }
+
+
+  @keyframes appear1 {
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes appear2 {
+    0% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes appear3 {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes appear4 {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.font{
+    color: var(--color-secondary-yellow);
+    font: var(--font-logo);
+    margin: 10px;
+    font-size: 16px;
+}

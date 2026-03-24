@@ -1,0 +1,12 @@
+
+.cross {
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+  }
+
+  .alignRight{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }

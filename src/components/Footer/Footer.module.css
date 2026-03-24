@@ -1,0 +1,140 @@
+
+.sectionOne{
+    min-height: 300px;
+    background-color: var(--color-gray-light);
+    border-top: 1px solid black;
+    display: flex;
+}
+
+.sectionOneContent{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.sectionTwo{
+    min-height: 250px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.sectionTwo p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.financialSupport{
+    margin: 0 auto;
+}
+
+.implementedBy{
+    position: absolute;
+    right: 20px;
+}
+
+footer {
+    padding: 5px 15px;
+    background-color: var( --color-gray-dark);
+    min-height: 80px;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right:5%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.privacyPolicy{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+.privacyPolicy p{
+    
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+}
+
+.copyright p{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.copyright span{
+    font-weight: bold;
+}
+
+.accreditation{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    
+}
+
+.accreditation p{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.container h3{
+    color:var(--color-brand-gray);
+}
+
+.contentContainer{
+
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 100px;
+}
+
+
+.contentContainer h4{
+    color: var(--color-gray-dark);
+}
+
+
+@media (max-width: 640px) {
+    .implementedBy{
+        position: static;
+    }
+    .financialSupport{
+        margin: 0;
+    }
+    .sectionTwo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,122 @@
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+    margin:0; 
+    padding:0;
+}
+
+li{
+  list-style: none;
+}
+
+a, a:hover, a:focus, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+    --color-brand-green: #1DD069;
+    --color-brand-gray:#313131;
+
+    --color-minigrids: #57C494;
+    --color-minigrids-site: #DFD662;
+    --color-powersector: #085064;
+    --color-shs: #F76906;
+
+    --color-secondary-red-dark: #7C0E14;
+    --color-secondary-red: #B91109;
+    --color-secondary-red-light: #F54A2B;
+    --color-secondary-yellow-dark: #FFBB00;
+    --color-secondary-yellow: #FFCC15;
+    --color-secondary-yellow-light: #FFEA62;
+    --color-secondary-blue-dark: #085064;
+    --color-secondary-blue: #0088A0;
+    --color-secondary-blue-light: #00CBDB;
+
+    --color-gray-light: #EEEFF1;
+    --color-gray-semi: #E0E2E9;
+    --color-gray: #C5C4Cf;
+    --color-gray-dark: #93939F;
+
+    --font-header: "Poppins", sans-serif;
+    --font-main: "Source Sans Pro", sans-serif;
+
+    --font-hero-h1: bold 50px var(--font-header);
+    --font-hero-h2: 20px var(--font-header);
+    --font-section-h1: bold 32px var(--font-header);
+    --font-section-h2: 20px var(--font-header);
+    --font-body-text: 18px var(--font-main);
+    --font-sidebar: 14px var(--font-main);
+    --font-legend: 12px var(--font-main);
+    --font-nav: 500 16px var(--font-header);
+
+    --font-sidebar-h4: 700 16px var(--font-main);
+    --font-sidebar-h5: 700 14px var(--font-main);
+
+    --font-logo: 700 14px var(--font-main);
+
+    --height-nav: 80px;
+    --height-footer: 100px;
+
+    --style-dropshadow: 2px 2px 5px 5px rgba(161, 159, 159, 0.1);
+
+    --control-box-background-color: white;
+    --control-box-border-radius: 5px;
+}
+
+.minigrid-popup{
+  font: var(--font-sidebar);
+}
+
+.minigrid-popup .maplibregl-popup-content {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: var(--style-dropshadow);
+  padding: 10px 10px 15px;
+  pointer-events: auto;
+}
+
+.minigrid-popup #content{
+  padding: 10px;
+
+}
+
+.minigrid-popup hr{
+  border-top: 1px solid var(--color-gray-semi);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+  margin: 10px 0px;
+}
+
+.minigrid-popup a{
+  color: var(--color-minigrids);
+  text-decoration: underline;
+}
+
+.state-label{
+  font: var(--font-logo);
+  color: var(--color-gray-dark)
+}
+
+.state-label .maplibregl-popup-tip{
+  border-color: #ffffff00;
+}
+
+.state-label .maplibregl-popup-content{
+  position: relative;
+  top: 20px;
+  background-color:#ffffff;  
+  padding: 5px;
+  box-shadow: none;
+
+}
+
+.maplibregl-ctrl-attrib-inner {
+  font: var(--font-legend); 
+}

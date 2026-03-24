@@ -1,0 +1,23 @@
+.circleStyle{
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 50%;
+}
+
+.font{
+    text-decoration: none;
+    font: var(--font-nav);
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: var(--color-gray-dark);
+    padding: 10px;
+}
+
+@media (max-width: 1140px) {
+    .font{
+        margin: 0 5px;
+        padding: 5px;
+    }
+}

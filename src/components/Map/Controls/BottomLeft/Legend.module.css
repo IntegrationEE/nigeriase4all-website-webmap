@@ -1,0 +1,61 @@
+/* Bottom left styles */
+.controlBox {
+    background-color: var(--control-box-background-color);
+    border-radius: var(--control-box-border-radius);
+    margin: 5px;
+    color: var(--color-brand-gray);
+    max-height: 90vh;
+  }
+
+.controlBoxContent{
+  padding: 10px
+}
+
+.legend {
+    display:grid;
+    grid-template-columns: 40px minmax(80px, 40%) 40px  minmax(80px, 40%);
+    justify-content: center;
+    align-items: center;
+}
+
+.legend p {
+  font: var(--font-legend);
+  padding: 5px 0;
+}
+.legend > div{
+    display: flex;
+    justify-content: center;
+}
+  
+.line {
+  width: 15px;
+}
+.dash {
+  width: 2px;
+  margin-right: 2px;
+}
+.circleLegend {
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.circleHalo {
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  display: flex;
+}
+.circleHalo::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: var(--color-secondary-red) 2px solid;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+
+}
+  

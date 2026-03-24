@@ -1,0 +1,68 @@
+.downloadContainer{
+  display: flex;
+}
+
+.download {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0px 0px 0px;
+
+}
+.downloadOptions{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 0px 0px 0px;  
+}
+
+.downloadOptions >span{
+  padding: 10px;
+
+}
+.download span {
+  padding-left: 3px;
+}
+
+.alertContainer {
+  min-width: 250px;
+  height: 20px;
+  font-weight: bold;
+  animation-duration: 1s;
+  animation-name: alertbox;
+  color: white;
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  left: 20px;
+  bottom: 10px;
+}
+
+@keyframes alertbox {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 20px;
+  }
+}
+
+/* source: https://css-tricks.com/introduction-reduced-motion-media-query/ */
+@media(prefers-reduced-motion:reduce) {
+
+  /* stop the animation for a user with this preference */
+  .alertContainer{
+    animation:none;
+  }
+  
+}
+
+.alertContainer span {
+  cursor: pointer;
+  font-size: 25px;
+}

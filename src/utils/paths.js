@@ -1,0 +1,14 @@
+export const HOMEPAGE = `/`;
+// export const MINIGRID_PATH = `/minigrid`;
+// export const OFFGRID_MG_PATH = `${MINIGRID_PATH}/offgrid`;
+export const OFFGRID_MG_PATH = `/minigrid-offgrid`;
+export const OFFGRID_MG_ALL = `${OFFGRID_MG_PATH}/all`;
+export const OFFGRID_MG_STATE = `${OFFGRID_MG_PATH}/:state`;
+// export const INTERCONNECTED_MG_PATH = `${MINIGRID_PATH}/interconnected`;
+export const INTERCONNECTED_MG_PATH = `/minigrid-interconnected`;
+export const INTERCONNECTED_MG_ALL = `${INTERCONNECTED_MG_PATH}/all`;
+export const INTERCONNECTED_MG_STATE = `${INTERCONNECTED_MG_PATH}/:state`;
+export const POWER_SECTOR_PATH = `/power-sector`;
+export const SOLAR_HOME_SYSTEM_PATH = `/shs`;
+export const SOLAR_HOME_SYSTEM_ALL = `${SOLAR_HOME_SYSTEM_PATH}/all`;
+export const SOLAR_HOME_SYSTEM_STATE = `${SOLAR_HOME_SYSTEM_PATH}/:state`;

@@ -1,0 +1,264 @@
+.containerAll {
+  z-index: 1200;
+  position: absolute;
+}
+.controlBox {
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  color: var(--color-brand-gray);
+  max-height: 90vh;
+}
+.controlBoxContent{
+  padding: 10px
+}
+.visibilityHidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  height: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease, height 0.6s ease, visibility 0.6s;
+}
+.visibilityVisible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  height: 100%;
+}
+.containerTopLeft {
+  top: 20px;
+  left: 20px;
+}
+
+.containerTopRight {
+  top: 20px;
+  right: 20px;
+}
+
+.containerBottomRight {
+  bottom: 40px;
+  right: 20px;
+  z-index: 4000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.containerBottomLeft {
+  bottom: 40px;
+  left: 20px;
+}
+.containerMobile {
+  bottom: 10px;
+  left: 20px;
+}
+
+.basebutton {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.button {
+  background-color: #ffffff00;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+.buttonMinimize {
+  background-color: #ffffff00;
+  width: 40px;
+  height: 20px;
+  max-width: 40px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonClear {
+  background: none;
+  border: none;
+}
+.buttonRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  cursor: pointer;
+}
+
+.hexagon {
+  height: 20px;
+  width: 18px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transform: rotate(29deg);
+  opacity: 0.7;
+  margin: 5px
+}
+.hexChildren{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus {
+  border-radius: 5px 5px 0 0;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: var(--color-gray-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minus {
+  border-radius: 0 0 5px 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Top left styles */
+
+.basetitle > div{
+  padding: 2px 0;
+}
+
+.baseoptions {
+  padding: 10px 10px 2px 10px;
+}
+.baseoptions > * {
+  padding: 5px ;
+}
+.selectedbase {
+  font-weight: 600;
+  font-style: italic;
+}
+.layerControl {
+  cursor: pointer;
+}
+
+
+/* Bottom right styles */
+.circleDisco{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.discoLegend{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 30px;
+}
+.discoChildren{
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.discoItem{
+  display: flex;
+  padding: 4px;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 5px;
+}
+.discoItem p{
+  font: var(--font-legend);
+}
+.circleLegend {
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mobile{
+  display: none;
+}
+
+.legendButton{
+  font: var(--font-sidebar-h4)
+}
+.clusterInfoTable {
+  text-align: left;
+  width: 100%;
+}
+.clusterInfoTable td,
+.clusterInfoTable th {
+  max-height: 20px;
+  padding: 0 10px 10px 0;
+}
+.tableRightAlign{
+  text-align: right;
+}
+.marketInfoTable {
+  text-align: left;
+  border-spacing: 0;
+}
+.marketInfoTable th {
+  font-weight: normal;
+  padding: 0 10px 5px 0;
+}
+.marketInfoTable td {
+  padding: 0 0 5px 0;
+}
+.horizontalRule{
+  border-top: 1px solid var(--color-gray-semi);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+  padding: 0px;
+}
+.zoomToCluster{
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font: inherit;
+  color: var(--color-minigrids);
+  font-size: 0.8rem;
+}
+.expandSurveyData{
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font: inherit;
+  color: var(--color-gray-dark);
+  padding: 0 10px 10px 0;
+  font-size: 0.8rem;
+}
+.clusterBoxButtons{
+  display:flex;
+  justify-content: space-between;
+}
+
+.overflow{
+  padding: 20px;
+  max-height: min(400px, 30vh);
+  overflow-y: auto;
+  border-top: 1px solid var(--color-gray-semi);
+  border-bottom: 1px solid var(--color-gray-semi);
+}
+
+@media (max-width: 640px) {
+  .hideOnMobile{
+    display: none;
+  }
+  .mobile{
+    display: inline;
+  }
+  .containerBottomRight{
+    max-width: calc(100vw - 40px);
+  }
+  .containerBottomLeft {
+    max-width: calc(100vw - 40px);
+  }
+  .hideLegend{
+    visibility: "none";
+  }
+  .legend{
+    max-width: calc(100vw - 50px);
+  }
+}

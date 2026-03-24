@@ -1,0 +1,74 @@
+.App {
+  display: grid;
+  grid-template-columns: minmax(270px, 20%) auto;
+  grid-template-rows: var(--height-nav) calc(100vh - var(--height-nav)) var(--height-footer);
+  grid-template-areas:
+   "navbar navbar"
+   "sidebar content"
+   "footer footer"
+  ;
+}
+
+.navbar {
+  grid-area: navbar;
+  z-Index: 4000;
+}
+
+.content {
+  grid-area: content;
+  font: var(--font-sidebar);
+  position:relative
+
+}
+
+.footer {
+  grid-area: footer;
+  font: var(--font-sidebar);
+  /* z-Index: 1000; */
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+  font: var(--font-sidebar);
+  z-Index: 3000;
+  overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-gray-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-dark);
+}
+
+@media (max-width: 780px) {
+  .App {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: var(--height-nav) calc(var(--height-nav) / 1.5) calc(100vh - 1.66667*var(--height-nav)) var(--height-footer);
+    grid-template-areas:
+     "navbar"
+     "sidebar"
+     "content"
+     "footer"
+    ;
+  }
+  .sidebar {
+    overflow-y: visible;
+  }
+}

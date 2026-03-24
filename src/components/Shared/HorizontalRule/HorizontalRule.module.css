@@ -1,0 +1,7 @@
+.horizontalRule{
+    border-top: 1px solid var(--color-gray-semi);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+  }

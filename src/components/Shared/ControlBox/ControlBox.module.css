@@ -1,0 +1,17 @@
+.base {
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .fit{
+    width: fit-content;
+  }
+
+  .shadow{
+    box-shadow: var(--style-dropshadow);
+  }
